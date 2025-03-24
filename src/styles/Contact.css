@@ -1,0 +1,134 @@
+/* Contact.css */
+
+.contact-section {
+    background: #1a163d;
+    padding: 4rem 2rem;
+    color: white;
+    border-top: 1px solid #2d2a5a;
+  }
+  
+  .contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #9f51e7;
+  }
+  
+  .contact-subtext {
+    text-align: center;
+    color: #d1d1d1;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+  }
+  
+  .contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .contact-card {
+    background: #24204b;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #2d2a5a;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border-color: #9f51e7;
+  }
+  
+  .contact-icon svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: #9f51e7;
+  }
+  
+  .contact-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #d1d1d1;
+  }
+  
+  .contact-details p {
+    color: #a1a1a1;
+    font-size: 0.9rem;
+  }
+  
+  .contact-form {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background: #24204b;
+    border: 1px solid #2d2a5a;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #9f51e7;
+    box-shadow: 0 0 0 2px rgba(159, 81, 231, 0.2);
+  }
+  
+  .submit-btn {
+    background: #9f51e7;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  
+  .submit-btn:hover {
+    background: #8a40d5;
+    transform: translateY(-2px);
+  }
+  
+  .copyright {
+    text-align: center;
+    color: #a1a1a1;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #2d2a5a;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-heading {
+      font-size: 2rem;
+    }
+    
+    .contact-methods {
+      grid-template-columns: 1fr;
+    }
+  }

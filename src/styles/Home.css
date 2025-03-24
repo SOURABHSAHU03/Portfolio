@@ -1,0 +1,87 @@
+.intro{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+  }
+  .intro div{
+    width: 80%;
+    user-select: none;
+    cursor: default;
+  }
+  .name{
+    color: rgb(159, 81, 231);
+  }
+  .disp{
+    color: rgb(159, 81, 231);
+  }
+  
+  .leftsection{
+    font-size: 3rem;
+  }
+  .leftsection div{
+    width: 100%;
+  }
+  .buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+  }
+  
+  .buttons button {
+    font-size: medium;
+    height: 3em;
+    min-width: 8em;
+    border: none;
+    border-radius: 15px;
+    background: #6767c3;
+    color: white;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .buttons button:hover {
+    transform: translateY(-3px);
+  }
+  
+  .buttons .leetcode {
+    background: #f89f1b;
+  }
+  
+  .rightsection img {
+    width: 80%;
+    max-width: 500px;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .intro{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 15px;
+      }
+      .intro div{
+        
+        width: 100%;
+        user-select: none;
+        cursor: default;
+      }
+      .leftsection{
+        font-size: 2.5rem;
+      }
+      .leftsection div{
+        width: 100%;
+      }
+      .rightsection img{
+        height: 0px;
+      }
+  }

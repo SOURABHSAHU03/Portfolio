@@ -1,0 +1,99 @@
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto 0;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: #6767c3;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    margin-left: -1px;
+  }
+  
+  .timelinecard {
+    background: #1a163d;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid #2d2a5a;
+    width: 45%;
+  }
+  
+  .timelinecard:nth-child(odd) {
+    left: 0;
+  }
+  
+  .timelinecard:nth-child(even) {
+    left: 55%;
+  }
+  
+  .timelinecard h4 {
+    color: #9f51e7;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timelinecard h5 {
+    color: #d1d1d1;
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+  }
+  
+  .timelinecard h6 {
+    color: #a1a1a1;
+    font-size: 0.9rem;
+  }
+  
+  .achievements {
+    margin-top: 3rem;
+    background: #1a163d;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #2d2a5a;
+  }
+  
+  .achievements h3 {
+    color: #9f51e7;
+    margin-bottom: 1rem;
+  }
+  
+  .achievements ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .achievements li {
+    color: #d1d1d1;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .achievements li::before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    color: #6767c3;
+  }
+  
+  @media (max-width: 768px) {
+    .timeline::before {
+      left: 30px;
+    }
+    
+    .timelinecard {
+      width: auto;
+      padding-left: 70px;
+      margin-left: 0;
+    }
+    
+    .timelinecard:nth-child(even),
+    .timelinecard:nth-child(odd) {
+      left: 0;
+    }
+  }
