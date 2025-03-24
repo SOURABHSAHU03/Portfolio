@@ -22,7 +22,7 @@ const Home = () => {
           <div>Hi, I am <span className="name">Sourabh Sahu</span></div>
           <div>and I am a <div style={{height:'2em'}}><span ref={typedRef} className="disp"></span></div></div>
           <div className="buttons">
-            <a href="https://drive.google.com/file/d/1aeHz6Ip4gGUxZhEiefRjjp8dHAJ-Eba4/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1Y9PYGwLQKM3VHXHM_qoGUt39KYERjdTd/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
               <button className="Resume">Resume</button>
             </a>
             <a href="https://github.com/SOURABHSAHU03" target="_blank" rel="noopener noreferrer">
