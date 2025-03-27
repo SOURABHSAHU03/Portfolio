@@ -94,7 +94,7 @@ const Chatbot = () => {
     try {
       // Enhanced prompt with full portfolio context
       const prompt = `
-      You are an AI assistant for Dhruv Nautiyal's portfolio. 
+      You are an AI assistant for Sourabh's portfolio. 
       Below is Sourabh's complete portfolio information. Read it carefully before answering:
 
       ${portfolioData}
